@@ -56,3 +56,5 @@ ORDER BY answer_id ASC
 
 select * FROM selected_answer
 ORDER BY selected_answer_id ASC 
+
+select * from answer where (survey_id=1)

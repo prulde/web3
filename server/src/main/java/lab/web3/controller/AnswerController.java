@@ -16,13 +16,14 @@ import java.util.List;
 public class AnswerController {
     private final AnswerService answerService;
 
+    // use survey id not answer
     @GetMapping("/{id}")
-    public Answer getAnswer(@PathVariable("id") int id) {
-        return answerService.findOne(id);
+    public List<Answer> getAnswersFromSurvey(@PathVariable("id") int id) {
+        return answerService.findBySurveyId(id);
     }
 
     @GetMapping()
-    public List<Answer> getAllAnswers() {
+    public List<Answer> getAllSurveys() {
         return answerService.findAll();
     }
 }

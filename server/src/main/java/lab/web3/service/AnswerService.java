@@ -23,6 +23,10 @@ public class AnswerService {
         return answerRepository.findAll();
     }
 
+    public List<Answer> findBySurveyId(int survey_id){
+        return answerRepository.findBySurveyId(survey_id);
+    }
+
     public void save(Answer answer) {
         answerRepository.save(answer);
     }
