@@ -25,7 +25,6 @@ create table selected_answer(
 	selected_answer_id int not null generated always as identity,
 	answer_id int unique not null,
 	ip_address text not null,
-	answer_date date not null,
 	foreign key(answer_id) references answer(answer_id)
 		on delete cascade
 		on update cascade,
@@ -43,10 +42,10 @@ INSERT INTO answer( survey_id , answer_text )
 VALUES ('1','Semen123123123'),
 ('1','second answer');
 
-INSERT INTO selected_answer( answer_id , ip_address, answer_date )
-VALUES ('2', 'ip123', '20.09.2021');
-INSERT INTO selected_answer( answer_id , ip_address, answer_date )
-VALUES ('2', 'ip123s', '20.09.2021');
+INSERT INTO selected_answer( answer_id , ip_address )
+VALUES ('2', 'ip123');
+INSERT INTO selected_answer( answer_id , ip_address )
+VALUES ('2', 'ip123s');
 
 select * FROM survey
 ORDER BY survey_id ASC 
@@ -58,3 +57,5 @@ select * FROM selected_answer
 ORDER BY selected_answer_id ASC 
 
 select * from answer where (survey_id=1)
+
+select * from selected_answer where (answer_id = 9)

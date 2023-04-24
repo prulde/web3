@@ -29,7 +29,7 @@ button {
 	height: 100%;
 }
 
-.answer {
+.surveypage {
 	outline-style: double;
 	outline-color: #008f11;
 	outline-width: 1px;
@@ -42,4 +42,29 @@ button {
 	border-radius: 4px;
 
 	text-align: left;
+}
+
+.post {
+	outline-style: double;
+	outline-color: #008f11;
+	outline-width: 1px;
+	box-sizing: border-box;
+	width: 50%;
+	margin: auto;
+	height: 100%;
+	background-color: #008f11;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+	border-radius: 4px;
+
+	text-align: center;
+}
+
+.answerinput {
+	text-align: center;
+	margin: auto;
+}
+
+.tomain {
+	display: flex;
+	color: tomato;
 }

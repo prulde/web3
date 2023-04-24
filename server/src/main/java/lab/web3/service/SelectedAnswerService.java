@@ -20,6 +20,10 @@ public class SelectedAnswerService {
         return answer.orElseThrow(()-> new SelectedAnswerNotFoundException("Answer not found" + id));
     }
 
+    public SelectedAnswer findByAnswerId(int id){
+        return selectedAnswerRepository.findByAnswerId(id);
+    }
+
     public void saveAnswer(SelectedAnswer answer){
         selectedAnswerRepository.save(answer);
     }

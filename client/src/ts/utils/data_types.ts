@@ -12,4 +12,9 @@ interface Answer {
 	answer_text: string;
 }
 
-export { Survey, Answer };
+interface SelectedAnswer {
+	answer_id: number;
+	ip_address: string;
+}
+
+export { Survey, Answer, SelectedAnswer };

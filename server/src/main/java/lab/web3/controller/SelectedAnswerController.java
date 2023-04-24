@@ -18,7 +18,7 @@ public class SelectedAnswerController {
 
     @GetMapping("/{id}")
     public SelectedAnswer getSelectedAnswer(@PathVariable("id") int id){
-        return selectedAnswerService.findOne(id);
+        return selectedAnswerService.findByAnswerId(id);
     }
 
     @PostMapping

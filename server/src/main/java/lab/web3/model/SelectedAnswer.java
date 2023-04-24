@@ -17,6 +17,7 @@ import java.time.ZonedDateTime;
 @Table(name = "selected_answer")
 public class SelectedAnswer {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "selected_answer_id")
     private int selected_answer_id;
 
@@ -25,9 +26,4 @@ public class SelectedAnswer {
 
     @Column(name = "ip_address")
     private String ip_address;
-
-    @Column(name = "answer_date")
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
-   // @JsonProperty("beginTime")
-    private ZonedDateTime answer_date;
 }
