@@ -1,0 +1,45 @@
+body {
+	background-color: #7b35a3;
+}
+
+.survey {
+	outline-style: double;
+	outline-color: #008f11;
+	outline-width: 1px;
+	box-sizing: border-box;
+	width: 50%;
+	margin: auto;
+	height: 100%;
+	background-color: #008f11;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+	border-radius: 4px;
+
+	text-align: center;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+button {
+	display: block;
+	margin: auto;
+	width: 50%;
+	height: 100%;
+}
+
+.answer {
+	outline-style: double;
+	outline-color: #008f11;
+	outline-width: 1px;
+	box-sizing: border-box;
+	width: 50%;
+	margin: auto;
+	height: 100%;
+	background-color: #008f11;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+	border-radius: 4px;
+
+	text-align: left;
+}

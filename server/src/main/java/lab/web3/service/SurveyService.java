@@ -23,6 +23,8 @@ public class SurveyService {
         return surveyRepository.findAll();
     }
 
+    public List<Survey> findPublicSurveys() { return surveyRepository.findPublicSurveys(); }
+
     public void save(Survey survey) {
         surveyRepository.save(survey);
     }

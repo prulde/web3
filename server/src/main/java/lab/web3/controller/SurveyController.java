@@ -29,8 +29,8 @@ public class SurveyController {
     }
 
     @GetMapping()
-    public List<Survey> getAllSurveys() {
-        return surveyService.findAll();
+    public List<Survey> getAllPublicSurveys() {
+        return surveyService.findPublicSurveys();
     }
 
     //{
